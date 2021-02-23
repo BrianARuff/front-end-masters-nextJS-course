@@ -1,13 +1,20 @@
-import * as React from "react";
-import Link from "next/link"
+import * as React from "react"
+/** @jsx jsx */
+/** @jsxRuntime classic */
+import { jsx } from "theme-ui"
+import {PropsWithChildren} from "react";
+import theme from "../../theme";
 
-const Page: React.FC = () => {
+const Page: React.FC = (props: PropsWithChildren<{}>) => {
+
     return (
-        <div>
-            <h1 className={`home-header`}>Index Page</h1>
-            <Link href={`/notes`}>
-                <a className={`home-header`}>Notes</a>
-            </Link>
+        <div sx={{height: `calc(100vh - 60px)`}}>
+            <div sx={{
+                variant: "containers.pages"
+            }}>
+                <h1 sx={{fontSize: 8, my: 0}}>This is a really dope note taking
+                    app.</h1>
+            </div>
         </div>
     )
 }

@@ -8,13 +8,17 @@ const theme = {
             border: "1px solid",
             borderColor: "muted",
             borderRadius: "4px",
-            p: 2
         },
         pages: {
             width: "100%",
             maxWidth: "960px",
             m: 0,
-            mx: "auto"
+            mx: "auto",
+            padding: "20px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
         },
         header: {
             height: '60px',
@@ -22,14 +26,15 @@ const theme = {
             bg: 'primary',
             borderBottom: '1px solid',
             borderColor: 'primary',
-            p: "20px"
+            p: 40,
         },
         headerNav: {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
             variant: 'containers.page',
-            height: '100%'
+            height: '100%',
+            pr: 40,
         },
         headerNavLink1: {fontWeight: 'bold', fontSize: 4, cursor: 'pointer'},
         headerNavLink2: {color: 'text', fontSize: 3, cursor: 'pointer'}
