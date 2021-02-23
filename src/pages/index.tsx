@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link"
-import "../src/components/styles.module.css"
 
 const Page: React.FC = () => {
     return (

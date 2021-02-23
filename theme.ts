@@ -1,3 +1,5 @@
+import {roboto} from "@theme-ui/presets"
+
 const theme = {
     ...roboto,
     containers: {
@@ -8,14 +10,33 @@ const theme = {
             borderRadius: "4px",
             p: 2
         },
-        page: {
+        pages: {
             width: "100%",
             maxWidth: "960px",
             m: 0,
             mx: "auto"
-        }
+        },
+        header: {
+            height: '60px',
+            width: '100vw',
+            bg: 'primary',
+            borderBottom: '1px solid',
+            borderColor: 'primary',
+            p: "20px"
+        },
+        headerNav: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            variant: 'containers.page',
+            height: '100%'
+        },
+        headerNavLink1: {fontWeight: 'bold', fontSize: 4, cursor: 'pointer'},
+        headerNavLink2: {color: 'text', fontSize: 3, cursor: 'pointer'}
     },
     styles: {
         ...roboto.styles
-    }
+    },
 }
+
+export default theme;
